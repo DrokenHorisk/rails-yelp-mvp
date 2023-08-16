@@ -27,6 +27,9 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Use Redis adapter to run Action Cable in production [
+gem "simple_form"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -44,6 +47,12 @@ gem "bootsnap", require: false
 
 # Use Sass to process CSS
 # gem "sassc-rails"
+# Dans le terminal, exécutez
+# bundle install
+# rails generate simple_form:install --bootstrap
+# rails generate model Restaurant name:string address:string phone_number:string category:string
+# rails generate model Review rating:integer content:text restaurant:references
+# rails db:migrate
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
